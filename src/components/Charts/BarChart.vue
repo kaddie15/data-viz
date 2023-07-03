@@ -32,15 +32,15 @@ const data = {
         'Data Science Manager',
         'Applied Scientist',
         'Research Engineer',
-        'ML Engineer',
         'Data Manager',
+        'Machine Learning Scientist',    
     ],
     datasets: [
         {
             label: 'Data One',
             backgroundColor: ['#00876c', '#3c986d', '#60a86d', '#84b76e', '#a8c671', '#cdd476', '#f4e07f', '#f4c76a', '#f3ad5a', '#ef9250', '#e9774c', '#e05b4d', '#d43d51'],
-            data: [1040, 840, 612, 289, 103, 101, 82, 58, 58, 37,
-                34, 29]
+            data: [1040, 840, 612, 323, 103, 101, 82, 58, 58, 37,
+                29, 24]
         },
     ]
 }
@@ -60,7 +60,6 @@ const options = {
 
 
 <style>
-
 #bar {
     height: 100%;
 }
