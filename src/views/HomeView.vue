@@ -1,18 +1,25 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <div class="flex flex-wrap">
+      <div class="w-full p-5">
+        <h1 class="text-3xl text-center">The Data Science Journey Roadmap: Salaries, Insights & Layoffs</h1>
+      </div>
+      <div class="w-full xl:w-6/12 mb-12 xl:mb-0 px-4">
+        <Card title="Experience Level Distribution"><PieChart></PieChart></Card>
+      </div>
+      <div class="w-full xl:w-6/12 px-4">
+        <Card title="Top 12 Most Popular Job Titles"><BarChart></BarChart></Card>
+      </div>
+    </div>
+
+
   </div>
 </template>
 
-<script>
+<script setup>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import Card from '@/components/Card.vue'
+import PieChart from '@/components/Charts/PieChart.vue'
+import BarChart from '@/components/Charts/BarChart.vue'
 
-export default {
-  name: 'HomeView',
-  components: {
-    HelloWorld
-  }
-}
 </script>
