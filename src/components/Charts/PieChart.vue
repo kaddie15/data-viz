@@ -1,10 +1,12 @@
 <template>
-    <Pie :data="data" :options="options" />
+    <!-- <Pie :data="data" :options="options" /> -->
+    <highcharts :options="chartOptions"></highcharts>
   </template>
   
-  <script setup>
+  <!-- <script setup>
   import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js'
   import { Pie } from 'vue-chartjs'
+  
   
   ChartJS.register(ArcElement, Tooltip, Legend)
   
@@ -54,5 +56,62 @@
     }
   }
   }
-  </script>
-  
+  </script> -->
+  <script setup>
+import { ref } from 'vue';
+
+
+const chartOptions = ref({
+  chart: {
+    type: 'pie',
+  },
+  title: {
+    text: '',
+  },
+  plotOptions: {
+    pie: {
+      innerSize: '60%',
+      dataLabels: {
+        enabled: true,
+        format: '{point.name}: {point.percentage:.2f}%',
+      //   format: '<b>{point.name}:</b> <span style="opacity: 0.5">{y}%</span>',
+      //       style: {
+      //           fontWeight: 'normal'
+      //       }
+      },
+    },
+  },  tooltip: {
+    formatter: function () {
+      return `<b>${this.point.name}</b>: ${this.percentage.toFixed(2)}%`;
+    },
+  },
+  series: [
+    {
+      name: 'Data',
+      colorByPoint: true,
+      data: [
+        {
+          name: 'Senior-level/Expert',
+          y: 2516,
+          color: '#389466'
+        },
+        {
+          name: 'Mid-level/Intermediate',
+          y: 805,
+          color: '#276854'
+        },
+        {
+          name: 'Entry-level/Junior',
+          y: 320,
+          color: '#94388b'
+        },
+        {
+          name: 'Executive-level/Director',
+          y: 114,
+          color: '#682761'
+        },
+      ],
+    },
+  ],
+});
+</script>
