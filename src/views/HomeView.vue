@@ -68,7 +68,7 @@ function updateMapTitle(e){
   }
   else {
     mapTitle.value = 'Avg Salary (USD$) around the world'
-    mapTitle.value = 'Which countries pay more?'
+    mapSubtitle.value = 'Which countries pay more?'
   }
 }
 </script>
