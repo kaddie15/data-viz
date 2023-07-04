@@ -59,7 +59,7 @@ import GroupBar from '@/components/Charts/GroupBar.vue'
 
 
 const mapTitle = ref('Avg Salary (USD$) around the world') ;
-const mapSubtitle = ref('')
+const mapSubtitle = ref('Which countries pay more?');
 function updateMapTitle(e){
   console.log(e)
   if ( e == 'Remote Ratio'){
