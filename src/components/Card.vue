@@ -13,7 +13,7 @@
       </div>
     </div>
     <div class="p-4 flex-auto">
-      <div class="relative h-[600px] max-h-[60vh]">
+      <div class="relative h-[700px]">
         <slot></slot>
       </div>
         </div>

@@ -1,5 +1,7 @@
 <template>
-    <Bar :data="data" :options="options" id="bar" />
+  <div class="text-black">   </div>
+    <Bar :data="chartData" :options="options" id="bar" />
+   
 </template>
   
 <script setup>
@@ -13,14 +15,13 @@ import {
     LinearScale
 } from 'chart.js'
 import { Bar } from 'vue-chartjs'
+import {reactive} from 'vue'
 
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend)
 
 
-
-
-const data = {
+const chartData =  reactive( {
     labels: [
         'Entry-level/Junior',
         'Mid-level/Intermediate',
@@ -52,12 +53,16 @@ const data = {
     ]
 }
 
+)
+
+
 const options = {
     responsive: true,
     maintainAspectRatio: false,
     indexAxis: 'y',
     
 }
+
 
 </script>
 
