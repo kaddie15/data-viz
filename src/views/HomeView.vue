@@ -5,22 +5,25 @@
         <h1 class="text-3xl text-center">The Data Science Journey Roadmap: Salaries, Insights</h1>
       </div>
       <div class="w-full xl:w-6/12 mb-12 xl:mb-0 p-4">
-        <Card title="Experience Level Distribution"><PieChart></PieChart></Card>
+        <Card title="Experience in Work Force"><PieChart></PieChart></Card>
       </div>
       <div class="w-full xl:w-6/12 p-4">
         <Card title="Top 12 Most Popular Job Titles" height="h-[400px]" ><BarChart></BarChart></Card>
       </div>
       <div class="w-full xl:w-12/12 p-4">
-        <Card title="Avg Salary (USD$) per Experience Level and Company Size" height="h-[600px]"><BarChartCompany></BarChartCompany></Card>
+        <Card title="Experience Contribution on Salary" height="h-[600px]"><BarChartCompany></BarChartCompany></Card>
       </div>
       <div class="w-full xl:w-12/12 p-4">
         <Card :title="mapTitle">    <MapChart @change-title="updateMapTitle"></MapChart></Card>
       </div>
       <div class="w-full xl:w-12/12 p-4">
-        <Card title="Avg Salary (USD$) per Job Title and Company Size">    <PackedBubbleChart></PackedBubbleChart></Card>
+        <Card title="Salaries on each Position depending on Company’s size">    <PackedBubbleChart></PackedBubbleChart></Card>
       </div>
       <div class="w-full xl:w-12/12 p-4">
-        <Card title="Data Science Salaries"> <RadarChart></RadarChart></Card>
+        <Card title="Average Salary Investigation for each Position"> <RadarChart></RadarChart></Card>
+      </div>
+      <div class="w-full xl:w-12/12 p-4">
+        <Card title="Salary Trending Yearly per Job Title"> <GroupBar></GroupBar></Card>
       </div>
 
       
@@ -42,13 +45,14 @@ import BarChartCompany from '@/components/Charts/BarChartCompany.vue'
 import PackedBubbleChart from '@/components/Charts/PackedBubbleChart.vue'
 import RadarChart from '@/components/Charts/RadarChart.vue'
 import MapChart from '@/components/Charts/MapChart.vue'
+import GroupBar from '@/components/Charts/GroupBar.vue'
 
 
 const mapTitle = ref('Avg Salary (USD$) around the world') ;
 function updateMapTitle(e){
   console.log(e)
   if ( e == 'Remote Ratio'){
-    mapTitle.value  = 'Remote work ration around the world'
+    mapTitle.value  = 'Remote Working Geographically'
   }
   else {
     mapTitle.value = 'Avg Salary (USD$) around the world'
