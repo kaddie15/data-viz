@@ -9,7 +9,8 @@
         <Card title="Position Popularity" height="h-[400px]" ><BarChart></BarChart></Card>
       </div>
       <div class="w-full xl:w-12/12 p-4">
-        <Card title="Salaries on each Position depending on Company’s size">    <PackedBubbleChart></PackedBubbleChart></Card>
+        <Card title="Salaries on each Position depending on Company’s size" subtitle="Which are the optimal salary positions across various company sizes?
+">    <PackedBubbleChart></PackedBubbleChart></Card>
       </div>
       <div class="w-full xl:w-12/12 p-4">
         <Card :title="mapTitle" :subtitle="mapSubtitle">    <MapChart @change-title="updateMapTitle"></MapChart></Card>
@@ -18,14 +19,16 @@
         <Card title="Salary Trending Yearly per Job Title" subtitle="How does salary change over the years for each position?"> <GroupBar></GroupBar></Card>
       </div>
       <div class="w-full xl:w-12/12 p-4">
-        <Card title="Experience Contribution on Salary" height="h-[600px]"><BarChartCompany></BarChartCompany></Card>
+        <Card title="Experience Contribution on Salary" subtitle="How much is the experience paid in each level depending on company size?
+" height="h-[600px]"><BarChartCompany></BarChartCompany></Card>
       </div>
       <div class="w-full xl:w-12/12 mb-12 xl:mb-0 p-4">
-        <Card title="Experience in Work Force"><PieChart></PieChart></Card>
+        <Card title="Experience in Work Force" subtitle="How is the work force’s experience distributed?
+"><PieChart></PieChart></Card>
       </div>
 
       <div class="w-full xl:w-12/12 p-4">
-        <Card title="Average Salary Investigation for each Position"> <RadarChart></RadarChart></Card>
+        <Card title="Average Salary Investigation for each Position" subtitle="How can position seniority, geography, and on-site presence affect the salary of each position?"> <RadarChart></RadarChart></Card>
       </div>
 <!-- 
       <div class="w-full xl:w-12/12 p-4">
