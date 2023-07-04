@@ -156,7 +156,7 @@ onMounted(() => {
                 //     borderWidth: 1,
                 // },
                 {
-                    label: 'Salary',
+                    label: 'Salary ($)',
                     data: [3, 2, 1, 21, 10],
                     backgroundColor: 'rgba(255, 166, 0, 0.5)',
                     borderColor: 'rgba(255, 166, 0, 1)',
