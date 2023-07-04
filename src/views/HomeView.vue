@@ -4,27 +4,30 @@
       <div class="w-full p-5">
         <h1 class="text-3xl text-center">The Data Science Journey Roadmap: Salaries, Insights</h1>
       </div>
-      <div class="w-full xl:w-6/12 mb-12 xl:mb-0 p-4">
-        <Card title="Experience in Work Force"><PieChart></PieChart></Card>
-      </div>
-      <div class="w-full xl:w-6/12 p-4">
+ 
+      <div class="w-full xl:w-12/12 p-4">
         <Card title="Position Popularity" height="h-[400px]" ><BarChart></BarChart></Card>
-      </div>
-      <div class="w-full xl:w-12/12 p-4">
-        <Card title="Experience Contribution on Salary" height="h-[600px]"><BarChartCompany></BarChartCompany></Card>
-      </div>
-      <div class="w-full xl:w-12/12 p-4">
-        <Card :title="mapTitle" :subtitle="mapSubtitle">    <MapChart @change-title="updateMapTitle"></MapChart></Card>
       </div>
       <div class="w-full xl:w-12/12 p-4">
         <Card title="Salaries on each Position depending on Company’s size">    <PackedBubbleChart></PackedBubbleChart></Card>
       </div>
       <div class="w-full xl:w-12/12 p-4">
-        <Card title="Average Salary Investigation for each Position"> <RadarChart></RadarChart></Card>
+        <Card :title="mapTitle" :subtitle="mapSubtitle">    <MapChart @change-title="updateMapTitle"></MapChart></Card>
       </div>
       <div class="w-full xl:w-12/12 p-4">
         <Card title="Salary Trending Yearly per Job Title" subtitle="How does salary change over the years for each position?"> <GroupBar></GroupBar></Card>
       </div>
+      <div class="w-full xl:w-12/12 p-4">
+        <Card title="Experience Contribution on Salary" height="h-[600px]"><BarChartCompany></BarChartCompany></Card>
+      </div>
+      <div class="w-full xl:w-12/12 mb-12 xl:mb-0 p-4">
+        <Card title="Experience in Work Force"><PieChart></PieChart></Card>
+      </div>
+
+      <div class="w-full xl:w-12/12 p-4">
+        <Card title="Average Salary Investigation for each Position"> <RadarChart></RadarChart></Card>
+      </div>
+
       <div class="w-full xl:w-12/12 p-4">
         <Card title="♀ Female Workforce in Tech" subtitle="What's the female presence in each country's digital realm?"> <MapChartSingle></MapChartSingle></Card>
       </div>

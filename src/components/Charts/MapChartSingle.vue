@@ -68,6 +68,7 @@ const mapOptions = reactive({
         name: '',
         borderColor: 'black',
         borderWidth: 0.2,
+        color: "#c994c7",
         states: {
             hover: {
                 color: '#c994c7'
