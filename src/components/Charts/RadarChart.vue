@@ -133,11 +133,32 @@ onMounted(() => {
                 'Data Infrastracture Engineer',
                 'Data Engineer',],
             datasets: [
+                // {
+                //     label: 'Experience',
+                //     data: [4, 6, 3, 5, 7],
+                //     backgroundColor: 'rgba(88, 80, 141, 0.5)',
+                //     borderColor: 'rgba(88, 80, 141, 1)',
+                //     borderWidth: 1,
+                // },
+                // {
+                //     label: 'Salary',
+                //     data: [4, 45, 3, 2, 9],
+                //     backgroundColor: 'rgba(188, 80, 144, 0.5)',
+                //     borderColor: 'rgba(188, 80, 144, 1)',
+                //     borderWidth: 1,
+                // },
+                // {
+                //     label: 'Employment Type',
+                //     data: [4, 5, 2, 1, 4],
+                //     backgroundColor: 'rgba(255, 99, 97, 0.5)',
+                //     borderColor: 'rgba(255, 99, 97, 1)',
+                //     borderWidth: 1,
+                // },
                 {
                     label: 'Salary',
-                    data: [4, 6, 3, 5, 7],
-                    backgroundColor: 'rgba(54, 162, 235, 0.5)',
-                    borderColor: 'rgba(54, 162, 235, 1)',
+                    data: [3, 2, 1, 21, 10],
+                    backgroundColor: 'rgba(255, 166, 0, 0.5)',
+                    borderColor: 'rgba(255, 166, 0, 1)',
                     borderWidth: 1,
                 },
             ]
@@ -165,11 +186,7 @@ watch(
 
 function updateData() {
     console.log("updates", chartData.value.data)
-    // data.datasets[0].data=[6, 9, 0, 1, 6, 5, 40]
-    chartData.value.data = [6, 9, 0, 1, 6]
-    if (selectedExperience.value == 'Senior') {
-        chartData.value.data = [2, 16, 13, 15, 17]
-    }
+    
     if (chartInstance) {
         chartInstance.data.datasets[0].data = [6, 9, 0, 1, 6];
         chartInstance.update();

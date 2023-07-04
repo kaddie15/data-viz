@@ -13,7 +13,7 @@
       </div>
     </div>
     <div class="p-4 flex-auto">
-      <div class="relative h-[700px]">
+      <div class="relative max-h-[700px]" :class="height" >
         <slot></slot>
       </div>
         </div>
@@ -24,5 +24,6 @@
 import { defineProps} from 'vue'
 defineProps({
     title: String,
+    height: String,
 });
 </script>
