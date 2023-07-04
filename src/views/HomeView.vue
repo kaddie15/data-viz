@@ -27,10 +27,10 @@
       <div class="w-full xl:w-12/12 p-4">
         <Card title="Average Salary Investigation for each Position"> <RadarChart></RadarChart></Card>
       </div>
-
+<!-- 
       <div class="w-full xl:w-12/12 p-4">
         <Card title="♀ Female Workforce in Tech" subtitle="What's the female presence in each country's digital realm?"> <MapChartSingle></MapChartSingle></Card>
-      </div>
+      </div> -->
 
       
 
@@ -52,7 +52,7 @@ import PackedBubbleChart from '@/components/Charts/PackedBubbleChart.vue'
 import RadarChart from '@/components/Charts/RadarChart.vue'
 import MapChart from '@/components/Charts/MapChart.vue'
 import GroupBar from '@/components/Charts/GroupBar.vue'
-import MapChartSingle from '@/components/Charts/MapChartSingle.vue'
+// import MapChartSingle from '@/components/Charts/MapChartSingle.vue'
 
 
 const mapTitle = ref('Avg Salary (USD$) around the world') ;
