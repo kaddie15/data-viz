@@ -69,7 +69,7 @@ import { radardata } from '@/js/radardata';
 const exps = ref(['Junior', 'Mid', 'Senior', 'Executive']);
 const selectedExperience = ref('Junior');
 
-const remoteStatuses = ['In-Premises', 'Hybrid', 'Remote'];
+const remoteStatuses = ['In-premises', 'Hybrid', 'Remote'];
 const selectedRemote = ref('Hybrid');
 
 
