@@ -62,21 +62,22 @@ import { ref, onMounted, watch } from 'vue';
 //     Legend
 // } from 'chart.js'
 import { Chart, registerables } from 'chart.js';
+import { radardata } from '@/js/radardata';
 // import { Radar } from 'vue-chartjs'
 
 
-const exps = ref(['Junior', 'Mid-Level', 'Senior', 'Executive']);
+const exps = ref(['Junior', 'Mid', 'Senior', 'Executive']);
 const selectedExperience = ref('Junior');
 
 const remoteStatuses = ['In-Premises', 'Hybrid', 'Remote'];
-const selectedRemote = ref('In-Premises');
+const selectedRemote = ref('Hybrid');
 
 
 const employmentTypes = ['Full Time', 'Part Time', 'Contract', 'Freelance']
 const selectedEmployment = ref('Full Time');
 
 const continents = ['Africa', 'Americas', 'Asia', 'Europe', 'Oceania'];
-const selectedCont = ref('Africa');
+const selectedCont = ref('Europe');
 
 // ChartJS.register(
 //   RadialLinearScale,
@@ -171,6 +172,7 @@ onMounted(() => {
             },
         },
     });
+    updateData()
 });
 
 
@@ -186,11 +188,31 @@ watch(
 
 function updateData() {
     console.log("updates", chartData.value.data)
-    
+    const { roles, salaries } = filterJobs(radardata);
+
     if (chartInstance) {
-        chartInstance.data.datasets[0].data = [6, 9, 0, 1, 6];
+        chartInstance.data.datasets[0].data = salaries;
+        chartInstance.data.labels = roles;
         chartInstance.update();
     }
+}
+//      
+const data2 = filterJobs(radardata);
+console.log(data2)
+function filterJobs(data) {
+    const filteredData = data.filter(job => {
+        return (
+            job.experience_detailed === selectedExperience.value &&
+            job.Continent === selectedCont.value &&
+            job.employment_detailed === selectedEmployment.value &&
+            job.remote_category === selectedRemote.value
+        );
+    });
+
+    const roles = filteredData.map(job => job.Role);
+    const salaries = filteredData.map(job => job.mean_salary_in_usd);
+
+    return { roles, salaries };
 }
 
 

@@ -8,7 +8,7 @@
         <Card title="Experience in Work Force"><PieChart></PieChart></Card>
       </div>
       <div class="w-full xl:w-6/12 p-4">
-        <Card title="Top 12 Most Popular Job Titles" height="h-[400px]" ><BarChart></BarChart></Card>
+        <Card title="Position Popularity" height="h-[400px]" ><BarChart></BarChart></Card>
       </div>
       <div class="w-full xl:w-12/12 p-4">
         <Card title="Experience Contribution on Salary" height="h-[600px]"><BarChartCompany></BarChartCompany></Card>
@@ -23,7 +23,7 @@
         <Card title="Average Salary Investigation for each Position"> <RadarChart></RadarChart></Card>
       </div>
       <div class="w-full xl:w-12/12 p-4">
-        <Card title="Salary Trending Yearly per Job Title"> <GroupBar></GroupBar></Card>
+        <Card title="Salary Trending Yearly per Job Title" subtitle="How does salary change over the years for each position?"> <GroupBar></GroupBar></Card>
       </div>
 
       

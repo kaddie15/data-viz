@@ -32,22 +32,22 @@ const chartData =  reactive( {
         {
             label: 'Small Companies',
             data: [59120.734694,58080.500000, 106875.465116,196827.166667],
-            backgroundColor: 'rgba(75, 192, 192, 0.2)',
-            borderColor: 'rgba(75, 192, 192, 1)',
+            backgroundColor: 'rgba(102, 194, 165, 0.4)',
+            borderColor: 'rgba(102, 194, 165, 1)',
             borderWidth: 1,
         },
         {
             label: 'Medium Companies',
             data: [87416.456140, 111586.421900,153643.334069, 198857.284211],
-            backgroundColor: 'rgba(255, 205, 86, 0.2)',
-            borderColor: 'rgba(255, 205, 86, 1)',
+            backgroundColor: 'rgba(252, 141, 98, 0.4)',
+            borderColor: 'rgba(252, 141, 98, 1)',
             borderWidth: 1,
         },
         {
             label: 'Large Companies',
             data: [72896.810000, 89135.731343,156159.690821, 165363.153846],
-            backgroundColor: 'rgba(255, 99, 132, 0.2)',
-            borderColor: 'rgba(255, 99, 132, 1)',
+            backgroundColor: 'rgba(141, 160, 203, 0.4)',
+            borderColor: 'rgba(141, 160, 203, 1)',
             borderWidth: 1,
         },
     ]

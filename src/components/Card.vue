@@ -9,6 +9,7 @@
           <h2 class="text-blueGray-700 text-xl font-semibold text-black">
             {{ title }}
           </h2>
+          <h4 class="text-blueGray-700 text-md font-semibold text-black">{{ subtitle }}</h4>
         </div>
       </div>
     </div>
@@ -24,6 +25,7 @@
 import { defineProps} from 'vue'
 defineProps({
     title: String,
+    subtitle: String,
     height: String,
 });
 </script>
