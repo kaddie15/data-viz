@@ -1,0 +1,3 @@
+<template>
+    Credits View
+</template>

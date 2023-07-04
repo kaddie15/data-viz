@@ -1,8 +1,9 @@
 <template>
-  <!-- <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav> -->
+  <nav class="flex justify-center p-4">
+    <router-link class="mx-1" to="/">Home</router-link> |
+    <router-link class="mx-1" to="/about">About</router-link> |
+    <router-link class="mx-1" to="/about">Credits</router-link>
+  </nav>
   <div class="p-6">
     <router-view />
   </div>
