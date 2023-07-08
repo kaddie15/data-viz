@@ -7,10 +7,10 @@
       <div class="w-full xl:w-5/12 p-4">
         <h1 class="text-xl mb-4">Data Science Positions Popularity </h1>
         <p>The chart displays the top 12 positions in terms of popularity within the data industry and provides a
-          valuable overview of the most sought-after roles. <br> It is worth noting that data-oriented positions, such as
+          valuable overview of the most sought-after roles. <br> <br> It is worth noting that data-oriented positions, such as
           Data
           Engineer, Data Scientist, and Data Analyst, are the most prevalent. Following closely are machine
-          learning-oriented positions. <br>
+          learning-oriented positions. <br> <br>
           It is important to mention that Machine Learning is often encompassed within the job responsibilities of a Data
           Scientist.</p>
 
@@ -46,11 +46,12 @@
             </ul>
           </div>
         </div>
-        <br>
         The bubble chart presents a comprehensive view of salary ranges for various positions within the industry.
+        <br>
         <br>
         This visualization enables users to identify the most lucrative positions. To facilitate informed decision-making,
         the chart incorporates company size as a dimension, as it impacts salary ranges for identical job titles.
+        <br>
         <br>
         Noteworthy findings include the highest-paid positions, such as Principal Data Scientist in small companies with
         an annual income of $416,000 or Data Analysis Lead with a yearly salary of $405,000.
@@ -92,8 +93,10 @@
         The choropleth map provides a geographical perspective on salaries, coupled with the availability of remote work
         options. These two factors are often correlated for individuals seeking higher salaries in other countries.
         <br>
+        <br>
         Users can explore different countries that offer optimal combinations of salary and remote/on-site work, aligning
         with their preferences.
+        <br>
         <br>
         Delving into the data, there are some cases worth highlighting. Saudi Arabia offers a favorable combination of
         high salaries ($139,000 annually) and 100% remote work for IT professionals. <br> On the other hand, the USA
@@ -136,11 +139,11 @@
           </div>
         </div>
         <p class="pt-6">
-          <br>
           The bar plot offers insights into salary trends across different job categories over time. Understanding salary
           trends per sector is crucial for selecting a career path that either demonstrates potential for improvement or,
           in
           the case of negative trends, signals the need for a career change.
+          <br>
           <br>
           In this example, the majority of sectors show increasing salary trends over the years, instilling optimism in
           candidates pursuing an IT career, particularly in AI/ML and Research & Engineering sectors. These sectors have
@@ -166,8 +169,10 @@
           company size in which individuals work. This valuable insight offers users a glimpse into the future of their
           data careers, particularly when making long-term choices and investments in career advancement.
           <br>
+          <br>
           As expected, salaries increase with experience levels from entry to director positions, with a minor exception
           for entry and mid-level positions in small companies.
+          <br>
           <br>
           Another noteworthy finding is that the highest salaries
           are typically offered for executive-level or director roles in medium and small companies, amounting to $198,000
@@ -183,7 +188,8 @@
           The doughnut plot presents the distribution of experience levels across data related positions. This insight
           helps users understand the competitiveness and challenges associated with reaching the salaries highlighted in
           the previous plot, "Experience Contribution on Salary."
-
+          <br>
+          <br>
           The plot reveals that 67% of jobs fall within the senior-level category, indicating that achieving a
           senior-level position becomes a crucial milestone for attaining optimal salaries.
 
@@ -203,9 +209,11 @@
           The radar chart empowers users to explore optimal position salaries based on multiple personalized criteria
           including experience level, location, employment and remote status.
           <br>
+          <br>
           Users can tailor the criteria to their specific needs, such as junior-level experience, location in Europe,
           full-time employment, and a hybrid working mode. Based on these preferences, the radar chart suggests that AI
           Developers would be the optimal option, with an average salary of $100,000 per year.
+          <br>
           <br>
           When considering senior positions in Europe, Analytics Engineers emerge as the job role with tremendous
           potential for high salaries, irrespective of the remote work option. Nevertheless, this scenario does not hold
@@ -241,14 +249,14 @@ import MapChart from '@/components/Charts/MapChart.vue'
 import GroupBar from '@/components/Charts/GroupBar.vue'
 
 
-const mapTitle = ref('Avg Annual Salary (USD$) around the world');
+const mapTitle = ref('Average Annual Salary (USD$) around the world');
 function updateMapTitle(e) {
   console.log(e)
   if (e == 'Remote Ratio') {
     mapTitle.value = 'Remote Ratio Around the World'
   }
   else {
-    mapTitle.value = 'Avg Annual Salary (USD$) around the world'
+    mapTitle.value = 'Average Annual Salary (USD$) around the world'
   }
 }
 </script>
