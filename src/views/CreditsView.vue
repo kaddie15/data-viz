@@ -12,13 +12,22 @@
         </div>
     </section>
 
-    <ul>
-        <li>link1</li>
-        <li>link1</li>
-        <li>link1</li>
-        <li>link1</li>
-        <li>link1</li>
-    </ul>
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 py-12">
+        <div class="pb-12">
+            <h1 class="text-center text-3xl font-bold">
+                Sources & Useful Links
+            </h1>
+
+            <ul>
+                <li><a class="text-white" href="https://ai-jobs.net/salaries/form/">https://ai-jobs.net/salaries/form/</a></li>
+                <li><a class="text-white" href="https://chartio.com/learn/data-analytics/distinguishing-data-roles/">https://chartio.com/learn/data-analytics/distinguishing-data-roles/</a></li>
+                <li><a class="text-white" href="https://en.wikipedia.org/wiki/List_of_computer_occupations">https://en.wikipedia.org/wiki/List_of_computer_occupations</a></li>
+                <li><a class="text-white" href="https://tailwindcss.com/docs/installation">https://tailwindcss.com/docs/installation</a></li>
+                <li><a class="text-white" href="https://daisyui.com/docs/install/">https://daisyui.com/docs/install/</a></li>
+            </ul>
+        </div>
+    </section>
+
 
 </template>
 <script setup>

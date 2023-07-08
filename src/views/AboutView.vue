@@ -1,7 +1,46 @@
 <template>
-  <div class="overflow-x-auto">
-    <h1 class="text-center text-xl mb-4 font-bold">Found a role you are interested in? Find out more!</h1>
-    <table class="table" style="width: 80%; margin: auto">
+  <div class="overflow-x-auto w-5/6 m-auto">
+      <h1 class="text-xl mb-4 font-bold">Overview</h1>
+      <p class="text-lg mb-4">
+          This data visualization project aims to support tech university graduates and professionals in their quest
+          for suitable career paths by harnessing valuable insights. The project presents a range of visualizations
+          designed to guide users toward optimal career choices. These insights empower users to make well-informed
+          decisions and investments in career advancement. To accomplish this, the project offers seven distinct
+          visualizations, complete with interactive features to enhance user experience. In summary, this data
+          visualization endeavor equips graduates with invaluable insights into the data industry job market, enabling
+          them to make informed decisions and select the most fitting career paths based on factors such as popularity,
+          salaries, geographical locations, and experience levels.
+      </p>
+
+      <br>
+      <br>
+
+      <div class="flex flex-wrap justify-between ">
+          <div class="w-full xl:w-7/12 mb-3 pr-6">
+            <div class="flex">
+              <h1 class="text-xl mb-4 self-center font-bold">The Data</h1>
+            </div>
+              <p class="text-lg mb-4">
+                  The dataset utilized for this project is obtained from ai-jobs.net and encompasses approximately 5,500 rows
+                  of information. It includes details about experience levels, employment types, job titles, salaries,
+                  locations, remote statuses, and company sizes.
+                  Prior to visualizing the data, the dataset underwent rigorous data cleaning procedures to ensure accuracy and
+                  consistency. This involved removing duplicates, handling missing values, and resolving inconsistencies in the
+                  data. Additionally, job titles were categorized and standardized to facilitate meaningful insights and
+                  comparisons across different roles in the data industry job market.
+              </p>
+
+          </div>
+          <div class="w-full xl:w-5/12 mb-3 pl-2 self-center">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/B5WA_JoRb9c" frameborder="0" allowfullscreen></iframe>
+          </div>
+      </div>
+
+      <br>
+      <br>
+
+    <h1 class="text-xl mb-4 font-bold">Found a role you are interested in? Find out more!</h1>
+    <table class="table text-lg">
       <!-- head -->
       <thead>
         <tr>
@@ -113,7 +152,7 @@
         </tr>
       </tbody>
     </table>
-    <div class="text-right text-xs px-6">Source:  <a class="text-yellow-500" href="https://chartio.com/learn/data-analytics/distinguishing-data-roles/">chartio.com</a></div>
+    <div class="text-right text-xs px-6">Source:  <a class="text-yellow-500" href="https://en.wikipedia.org/wiki/List_of_computer_occupations">Wikipedia</a></div>
   </div>
 
 </template>
