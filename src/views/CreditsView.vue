@@ -1,9 +1,9 @@
 <template>
     <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 py-12">
         <div class="text-center pb-12">
-            <h2 class="font-bold text-indigo-600 text-3xl">
+            <h1 class="text-3xl text-center font-bold">
                 Our team
-            </h2>
+            </h1>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
            <TeamMember name="Katerina Drakaki" photo="katerina.jpg" linked-in-link="https://www.linkedin.com/in/katerina-drakaki/"/>
