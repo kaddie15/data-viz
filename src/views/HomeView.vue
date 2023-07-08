@@ -99,7 +99,7 @@
         <br>
         <br>
         Delving into the data, there are some cases worth highlighting. Saudi Arabia offers a favorable combination of
-        high salaries ($139,000 annually) and 100% remote work for IT professionals. <br> On the other hand, the USA
+        high salaries ($139,000 annually) and 100% remote work for IT professionals. <br> <br> On the other hand, the USA
         provides
         higher salaries (approximately $157,624 yearly), but with a lower remote work ratio (41%), suggesting that
         individuals within this salary range might need to consider relocating. For those already residing in the USA, it
@@ -155,12 +155,7 @@
           <GroupBar></GroupBar>
         </Card>
       </div>
-      <div class="w-full xl:w-8/12 p-4">
-        <Card height="h-[600px]">
-          <BarChartCompany></BarChartCompany>
-        </Card>
-      </div>
-      <div class="w-full xl:w-4/12 p-4">
+      <div class="w-full xl:w-5/12 p-4">
         <div class="flex">
           <h1 class="text-xl self-center">Experience Contribution on Salary </h1>
         </div>
@@ -177,9 +172,14 @@
           Another noteworthy finding is that the highest salaries
           are typically offered for executive-level or director roles in medium and small companies, amounting to $198,000
           and $196,000 annually, respectively.
-
         </p>
       </div>
+      <div class="w-full xl:w-7/12 p-4">
+        <Card height="h-[600px]">
+          <BarChartCompany></BarChartCompany>
+        </Card>
+      </div>
+
       <div class="w-full xl:w-12/12 p-4">
         <div class="flex">
           <h1 class="text-xl self-center">Experience in WorkForce</h1>
