@@ -60,6 +60,33 @@ const options = {
     responsive: true,
     maintainAspectRatio: false,
     indexAxis: 'y',
+    // round numbers in tooltips
+    plugins: {
+        tooltip: {
+            callbacks: {
+                label: function(context) {
+                    var label = context.dataset.label || '';
+
+                    if (label) {
+                        label += ': ';
+                    }
+                    if (context.parsed.x !== null) {
+                        label += new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(context.parsed.x);
+                    }
+                    return label;
+                }
+            }
+        }
+    },
+    // Add a name for x axis
+    scales: {
+        x: {
+            title: {
+                display: true,
+                text: 'Average Annual Salary (USD$)'
+            }
+        }
+    },
     
 }
 

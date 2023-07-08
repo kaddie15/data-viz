@@ -186,7 +186,12 @@ const mapOptions = reactive({
         },
         allAreas: true,
         data: salarydata
-    }]
+    }],
+    tooltip: {
+        valueThousandsSeparator: ',',
+        useHTML: true,
+        pointFormat: '<b>{point.name}:</b> {point.value:,.2f}$',
+  }
 });
 
 
@@ -201,6 +206,7 @@ function updateChartData() {
     else if (mode.value === 'Salary') {
         mode.value = 'Remote Ratio'
         mapOptions.series[0].data = remoteData
+        mapOptions.tooltip.pointFormat = '<b>{point.name}:</b> {point.value:.1f}%'
     }
     emit('changeTitle', mode.value);
     

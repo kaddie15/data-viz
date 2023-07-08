@@ -2,14 +2,14 @@
   <div>
     <div class="flex flex-wrap">
       <div class="w-full p-5">
-        <h1 class="text-3xl text-center">The Data Science Journey Roadmap: Salaries, Insights</h1>
+        <h1 class="text-3xl text-center">The Data Science Journey Roadmap: Salaries & Insights</h1>
       </div>
  
       <div class="w-full xl:w-12/12 p-4">
-        <Card title="Position Popularity" height="h-[400px]" ><BarChart></BarChart></Card>
+        <Card title="Data Science Positions Popularity" height="h-[400px]" ><BarChart></BarChart></Card>
       </div>
       <div class="w-full xl:w-12/12 p-4">
-        <Card title="Salaries on each Position depending on Company’s size" subtitle="Which are the optimal salary positions across various company sizes?
+        <Card title="Salaries per Position depending on Company’s size" subtitle="Which are the optimal salary positions across various company sizes?
 ">    <PackedBubbleChart></PackedBubbleChart></Card>
       </div>
       <div class="w-full xl:w-12/12 p-4">

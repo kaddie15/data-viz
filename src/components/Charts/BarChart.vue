@@ -53,7 +53,16 @@ const options = {
         legend: {
             display: false
         }
-    }
+    },
+    // Add name for x axis
+    scales: {
+        x: {
+            title: {
+                display: true,
+                text: 'Count of Positions'
+            }
+        }
+    },
 }
 
 </script>

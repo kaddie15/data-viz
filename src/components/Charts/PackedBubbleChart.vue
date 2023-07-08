@@ -53,7 +53,7 @@ const chartOptions = ref({
   },
   tooltip: {
     useHTML: true,
-    pointFormat: '<b>{point.name}:</b> {point.value}$',
+    pointFormat: '<b>{point.name}:</b> {point.value:,.2f}$',
   },
 });
 

@@ -24,11 +24,12 @@ const chartOptions = ref({
     yAxis: {
         min: 0,
         title: {
-            text: 'Avg Salary (USD$)'
+            text: 'Average Annual Salary (USD$)'
         }
     },
     tooltip: {
-        valueSuffix: '$'
+        valueSuffix: '$',
+        valueThousandsSeparator: ','
     },
     plotOptions: {
         column: {

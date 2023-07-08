@@ -156,7 +156,7 @@ onMounted(() => {
                 //     borderWidth: 1,
                 // },
                 {
-                    label: 'Salary ($)',
+                    label: 'Average Salary ($)',
                     data: [3, 2, 1, 21, 10],
                     backgroundColor: 'rgba(255, 166, 0, 0.5)',
                     borderColor: 'rgba(255, 166, 0, 1)',
@@ -170,7 +170,13 @@ onMounted(() => {
                     beginAtZero: true,
                 },
             },
-        },
+            // Position legend below the plot
+            plugins: {
+                legend: {
+                    position: 'bottom',
+                },
+            }
+        }
     });
     updateData()
 });
