@@ -113,6 +113,7 @@
         </tr>
       </tbody>
     </table>
+    <div class="text-right text-xs px-6">Source:  <a class="text-yellow-500" href="https://chartio.com/learn/data-analytics/distinguishing-data-roles/">chartio.com</a></div>
   </div>
 
 </template>
