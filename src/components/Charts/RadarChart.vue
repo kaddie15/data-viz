@@ -1,8 +1,7 @@
 <template>
     <div class="flex justify-center flex-col mb-4">
-        <div class="mb-2 flex flex-row justify-center">
-            <div class="text-black">
-                <!-- {{ data.datasets[0].data }} -->
+        <div class="mb-2 flex flex-row justify-center flex-wrap gap-4">
+            <div class="text-black basis-1/4">
                 <label for="exp" class="text-sm my-2 pr-2">Experience:</label>
                 <select id="exp" v-model="selectedExperience" @change="updateData"
                     class="border-0 w-1/6 px-3 my-2 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150 text-black">
@@ -11,7 +10,7 @@
                     </option>
                 </select>
             </div>
-            <div class="text-black">
+            <div class="text-black basis-1/4">
                 <label for="continent" class="text-sm my-2 pr-2">Continent:</label>
                 <select id="continent" v-model="selectedCont"
                     class="border-0 w-1/6 px-3 my-2 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150 text-black">
@@ -20,7 +19,7 @@
                     </option>
                 </select>
             </div>
-            <div class="text-black">
+            <div class="text-black basis-1/4">
                 <label for="employment" class="text-sm my-2 pr-2">Employment type:</label>
                 <select id="employment" v-model="selectedEmployment"
                     class="border-0 w-1/6 px-3 my-2 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150 text-black">
@@ -30,7 +29,7 @@
                     </option>
                 </select>
             </div>
-            <div class="text-black">
+            <div class="text-black basis-1/4">
                 <label for="remote" class="text-sm my-2 pr-2">Remote Status:</label>
                 <select id="remote" v-model="selectedRemote"
                     class="border-0 w-1/6 px-3 my-2 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150 text-black">
@@ -45,25 +44,13 @@
 
 
     </div>
-    <!-- <Radar :data="data" :options="options" ref="chart" /> -->
-    <!-- <canvas id="marksChart" width="600" height="400"></canvas> -->
     <div class="flex justify-center  max-h-[650px]"><canvas ref="radarChart" width="600" height="400"></canvas></div>
 </template>
   
 <script setup>
 import { ref, onMounted, watch } from 'vue';
-// import {
-//     Chart as ChartJS,
-//     RadialLinearScale,
-//     PointElement,
-//     LineElement,
-//     Filler,
-//     Tooltip,
-//     Legend
-// } from 'chart.js'
 import { Chart, registerables } from 'chart.js';
 import { radardata } from '@/js/radardata';
-// import { Radar } from 'vue-chartjs'
 
 
 const exps = ref(['Junior', 'Mid', 'Senior', 'Executive']);
@@ -134,27 +121,6 @@ onMounted(() => {
                 'Data Infrastracture Engineer',
                 'Data Engineer',],
             datasets: [
-                // {
-                //     label: 'Experience',
-                //     data: [4, 6, 3, 5, 7],
-                //     backgroundColor: 'rgba(88, 80, 141, 0.5)',
-                //     borderColor: 'rgba(88, 80, 141, 1)',
-                //     borderWidth: 1,
-                // },
-                // {
-                //     label: 'Salary',
-                //     data: [4, 45, 3, 2, 9],
-                //     backgroundColor: 'rgba(188, 80, 144, 0.5)',
-                //     borderColor: 'rgba(188, 80, 144, 1)',
-                //     borderWidth: 1,
-                // },
-                // {
-                //     label: 'Employment Type',
-                //     data: [4, 5, 2, 1, 4],
-                //     backgroundColor: 'rgba(255, 99, 97, 0.5)',
-                //     borderColor: 'rgba(255, 99, 97, 1)',
-                //     borderWidth: 1,
-                // },
                 {
                     label: 'Average Salary ($)',
                     data: [3, 2, 1, 21, 10],

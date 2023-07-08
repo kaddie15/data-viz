@@ -1,3 +1,9 @@
 <template>
-    Credits View
+    <ul>
+        <li>link1</li>
+        <li>link1</li>
+        <li>link1</li>
+        <li>link1</li>
+        <li>link1</li>
+    </ul>
 </template>
