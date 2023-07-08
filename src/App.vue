@@ -2,7 +2,7 @@
   <nav class="flex justify-center p-4">
     <router-link class="mx-1" to="/">Visualizations</router-link> |
     <router-link class="mx-1" to="/about">About</router-link> |
-    <router-link class="mx-1" to="/about">Credits</router-link>
+    <router-link class="mx-1" to="/credits">Credits</router-link>
   </nav>
   <div class="p-6">
     <router-view />
