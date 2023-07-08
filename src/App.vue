@@ -1,6 +1,6 @@
 <template>
   <nav class="flex justify-center p-4">
-    <router-link class="mx-1" to="/">Vizualisations</router-link> |
+    <router-link class="mx-1" to="/">Visualizations</router-link> |
     <router-link class="mx-1" to="/about">About</router-link> |
     <router-link class="mx-1" to="/about">Credits</router-link>
   </nav>
