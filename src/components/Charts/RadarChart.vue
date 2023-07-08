@@ -1,6 +1,6 @@
 <template>
     <div class="flex justify-center flex-col mb-4">
-        <div class="mb-2 flex flex-row justify-center flex-wrap gap-4">
+        <div class="mb-2 flex flex-row justify-center flex-wrap gap-2">
             <div class="text-black basis-1/4">
                 <label for="exp" class="text-sm my-2 pr-2">Experience:</label>
                 <select id="exp" v-model="selectedExperience" @change="updateData"
@@ -44,7 +44,7 @@
 
 
     </div>
-    <div class="flex justify-center  max-h-[650px]"><canvas ref="radarChart" width="600" height="400"></canvas></div>
+    <div class="flex justify-center  max-h-[550px]"><canvas ref="radarChart" width="600" height="400"></canvas></div>
 </template>
   
 <script setup>
