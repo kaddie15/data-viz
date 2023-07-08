@@ -179,7 +179,6 @@
           <BarChartCompany></BarChartCompany>
         </Card>
       </div>
-
       <div class="w-full xl:w-12/12 p-4">
         <div class="flex">
           <h1 class="text-xl self-center">Experience in WorkForce</h1>
