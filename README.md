@@ -3,7 +3,7 @@
 ## 💡Project Overview
 This project was developed for the purposes of the Data Visualization course (MSc in Computer Science) at the National 
 and Kapodistrian University of Athens. It is a web application that allows users to get insights about Data Science 
-jobs salaries. The project is deployed on [Netlify](https://www.netlify.com/).
+jobs salaries. The project is deployed on [Netlify](https://www.netlify.com/) and is available [here](https://master--statuesque-cactus-b3a29a.netlify.app).
 
 In detail, this data visualization project aims to support tech university graduates and professionals in their quest 
 for suitable career paths by harnessing valuable insights. The project presents a range of visualizations designed to 
