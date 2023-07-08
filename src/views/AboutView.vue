@@ -1,6 +1,6 @@
 <template>
   <div class="overflow-x-auto">
-    <h1 class="text-center text-xl mb-4">Found a role you are interested in? Find out more</h1>
+    <h1 class="text-center text-xl mb-4 font-bold">Found a role you are interested in? Find out more!</h1>
     <table class="table" style="width: 80%; margin: auto">
       <!-- head -->
       <thead>

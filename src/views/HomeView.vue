@@ -2,10 +2,10 @@
   <div>
     <div class="flex flex-wrap">
       <div class="w-full p-5">
-        <h1 class="text-3xl text-center">The Data Science Journey Roadmap: Salaries & Insights</h1>
+        <h1 class="text-3xl text-center font-bold mb-10">The Data Science Journey Roadmap: Salaries & Insights</h1>
       </div>
-      <div class="w-full xl:w-5/12 p-4">
-        <h1 class="text-xl mb-4">Data Science Positions Popularity </h1>
+      <div class="w-full xl:w-5/12 p-4 mb-3">
+        <h1 class="text-xl mb-4 font-bold">Data Science Positions Popularity </h1>
         <p>The chart displays the top 12 positions in terms of popularity within the data industry and provides a
           valuable overview of the most sought-after roles. <br> <br> It is worth noting that data-oriented positions, such as
           Data
@@ -15,14 +15,14 @@
           Scientist.</p>
 
       </div>
-      <div class="w-full xl:w-7/12 p-4">
+      <div class="w-full xl:w-7/12 p-4 mb-3">
         <Card height="h-[400px]">
           <BarChart></BarChart>
         </Card>
       </div>
       <div class="w-full xl:w-12/12 p-4">
         <div class="flex">
-          <h1 class="text-xl self-center">Salaries per Position depending on Company’s size </h1>
+          <h1 class="text-xl self-center font-bold">Salaries per Position depending on Company’s size </h1>
           <div class="dropdown dropdown-hover bg-[#27293d] mt-1">
             <label tabindex="0" class="btn rounded-full max-w-5 bg-transparent border-0"><svg fill="#ffffff" version="1.1"
                 id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px"
@@ -56,14 +56,14 @@
         Noteworthy findings include the highest-paid positions, such as Principal Data Scientist in small companies with
         an annual income of $416,000 or Data Analysis Lead with a yearly salary of $405,000.
       </div>
-      <div class="w-full xl:w-12/12 p-4">
+      <div class="w-full xl:w-12/12 p-4 mb-3">
         <Card>
           <PackedBubbleChart></PackedBubbleChart>
         </Card>
       </div>
       <div class="w-full xl:w-12/12 p-4">
         <div class="flex">
-          <h1 class="text-xl self-center">{{ mapTitle }} </h1>
+          <h1 class="text-xl self-center font-bold">{{ mapTitle }} </h1>
           <div class="dropdown dropdown-hover bg-[#27293d] mt-1">
             <label tabindex="0" class="btn rounded-full max-w-5 bg-transparent border-0"><svg fill="#ffffff" version="1.1"
                 id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px"
@@ -106,14 +106,14 @@
         indicates that they are in one of the highest-paying countries for IT professionals globally.
 
       </div>
-      <div class="w-full xl:w-12/12 p-4">
+      <div class="w-full xl:w-12/12 p-4 mb-3">
         <Card>
           <MapChart @change-title="updateMapTitle"></MapChart>
         </Card>
       </div>
-      <div class="w-full xl:w-5/12 p-4">
+      <div class="w-full xl:w-5/12 p-4 mb-3">
         <div class="flex">
-          <h1 class="text-xl self-center">Salary Trending Yearly per Job Title </h1>
+          <h1 class="text-xl self-center font-bold">Salary Trends per Job Title Category </h1>
           <div class="dropdown dropdown-hover bg-[#27293d] mt-1">
             <label tabindex="0" class="btn rounded-full max-w-5 bg-transparent border-0"><svg fill="#ffffff" version="1.1"
                 id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px"
@@ -150,14 +150,14 @@
           experienced the highest salary growth between 2020 and 2023, amounting to $64,000 and $117,000 respectively.
         </p>
       </div>
-      <div class="w-full xl:w-7/12 p-4">
+      <div class="w-full xl:w-7/12 p-4 mb-3">
         <Card>
           <GroupBar></GroupBar>
         </Card>
       </div>
-      <div class="w-full xl:w-5/12 p-4">
+      <div class="w-full xl:w-5/12 p-4 mb-3">
         <div class="flex">
-          <h1 class="text-xl self-center">Experience Contribution on Salary </h1>
+          <h1 class="text-xl self-center font-bold">Experience Impact on Salary </h1>
         </div>
         <p class="pt-6">
           The bar plot provides an overview of salaries based on experience levels in the IT industry, considering the
@@ -174,14 +174,14 @@
           and $196,000 annually, respectively.
         </p>
       </div>
-      <div class="w-full xl:w-7/12 p-4">
+      <div class="w-full xl:w-7/12 p-4 mb-3">
         <Card height="h-[600px]">
           <BarChartCompany></BarChartCompany>
         </Card>
       </div>
       <div class="w-full xl:w-12/12 p-4">
         <div class="flex">
-          <h1 class="text-xl self-center">Experience in WorkForce</h1>
+          <h1 class="text-xl self-center font-bold">Experience in Workforce</h1>
         </div>
         <p class="pt-6">
           The doughnut plot presents the distribution of experience levels across data related positions. This insight
@@ -195,14 +195,14 @@
 
         </p>
       </div>
-      <div class="w-full xl:w-12/12 mb-12 xl:mb-0 p-4">
+      <div class="w-full xl:w-12/12 mb-12 xl:mb-3 p-4">
         <Card>
           <PieChart></PieChart>
         </Card>
       </div>
-      <div class="w-full xl:w-5/12 p-4">
+      <div class="w-full xl:w-5/12 p-4 mb-3">
         <div class="flex">
-          <h1 class="text-xl self-center">Average Salary Investigation for each Position</h1>
+          <h1 class="text-xl self-center font-bold">Average Salary Exploration for each Position</h1>
         </div>
         <p class="pt-10">
           The radar chart empowers users to explore optimal position salaries based on multiple personalized criteria
@@ -220,7 +220,7 @@
           geographical location of companies a pivotal factor in choosing a specialization to pursue.
         </p>
       </div>
-      <div class="w-full xl:w-7/12 p-4">
+      <div class="w-full xl:w-7/12 p-4 mb-3">
         <Card>
           <RadarChart></RadarChart>
         </Card>
