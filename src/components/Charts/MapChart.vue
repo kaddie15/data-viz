@@ -1,5 +1,5 @@
 <template>
-    <div class="m-4 flex justify-end"><button class=" btn btn-primary btn-sm " @click="updateChartData">Switch to {{ nextMode }}</button> </div>
+    <div class="m-4 flex justify-end"><button class=" btn btn-primary btn-sm btn:hover:bg-violet-600 " @click="updateChartData">Switch to {{ nextMode }}</button> </div>
     <highcharts :constructor-type="'mapChart'" :options="mapOptions" class="map" ref="mapChart"></highcharts>
 </template>
   
@@ -190,16 +190,17 @@ const mapOptions = reactive({
     tooltip: {
         valueThousandsSeparator: ',',
         useHTML: true,
-        pointFormat: '<b>{point.name}:</b> {point.value:,.2f}$',
+        pointFormat: '<b>{point.name}:</b> {point.value:.2f}$',
   }
 });
+
+// '{series.name}: <b>{point.y:.2f}</b><br/>',
 
 
 function updateChartData() {
 
     if(mode.value === 'Remote Ratio'){
         mode.value = 'Salary'
-        // mapOptions.series[0].data = ;
         mapOptions.series[0].data = salarydata;
 
     }
@@ -213,20 +214,14 @@ function updateChartData() {
 
 }
 
-
-
-// function updateChartData2() {
-//     updateChartData([
-//         ['fo', 10],
-//         ['um', 20],
-//         ['us', 30],
-//         ['kg', 40],
-//         ['np', 50]
-//     ]);
-// }
 </script>
-<style scoped>
+<style scoped lang="scss">
 .map {
     max-height: 700px;
+}
+
+
+.btn:hover {
+    background-color: blue;
 }
 </style>
