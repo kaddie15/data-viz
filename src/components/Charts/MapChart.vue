@@ -194,7 +194,6 @@ const mapOptions = reactive({
   }
 });
 
-// '{series.name}: <b>{point.y:.2f}</b><br/>',
 
 
 function updateChartData() {
